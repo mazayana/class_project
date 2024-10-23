@@ -73,10 +73,6 @@ attach(ppgdp_infmort)
        ylab = "Infant Mortality", 
        col.axis = "white", 
        las = 1) 
-  #I need to rearrange the axis labels in the x-axis, but when I remove the x-axis labels 
-  #with command xaxt ="n", for some reason it does not produce the desired results. 
-  #So, I make the color of the labels in the x and y axis white (whiteout the values)
-  #and create new axis labels for both x and y axis.
   
   x <- c("0","","40000","","80000","") #creating new vector for the length of the x-axis labels
   y <- seq(0, 120, by = 20) #creating new vector for the length of the y-axis labels
@@ -116,6 +112,3 @@ dev.off()
 #To export the graphs into the desired output as mentioned before
 
 detach(ppgdp_infmort)
-
-  
-  #End of task 3 
